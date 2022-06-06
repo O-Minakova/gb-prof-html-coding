@@ -226,6 +226,167 @@
     color: #9F9F9F;
 }
 
+.reg_content {
+    margin-top: 64px;
+    margin-bottom: 96px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.reg_contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 360px;
+}
+
+.contactChoice1 {
+    display: inline-block;
+}
+
+.reg_header4 {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+}
+
+.entry_field {
+    margin-top: 20px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 16px;
+    border: 1px solid #B1B1B1;
+    width: 100%;
+    box-sizing:border-box;
+}
+
+.entry_field::placeholder {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+}
+
+.reg_sex_radio {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: row;
+}
+
+.reg_sex_label {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    color: #000000;
+    position: relative;
+    margin-right: 20px;
+}
+
+.reg_sex_label:last-of-type {
+    margin-right: 0;
+}
+
+.sex_radio_custom {
+    opacity: 0;
+    position: absolute;
+}
+
+.sex_radio_custom, .reg_sex_label {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.sex_radio_custom + .reg_sex_label:before {
+    border-radius: 50%;
+    content: '';
+    background: #fff;
+    border: 2px solid #ddd;
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.sex_radio_custom:checked + .reg_sex_label:before {
+    content: '●';
+    font-size: 16px;
+}
+
+.reg_contacts_info {
+    margin-top: 16px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+}
+
+.reg_form_submit {
+    margin-top: 38px;
+    background: #F16D7F;
+    border: 1px solid #F16D7F;
+    padding: 16px 24px 16px 28px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    width: 166px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.submit_arrow {
+    margin-left: 20px;
+}
+
+.reg_loyalty {
+    max-width: 652px;
+}
+
+.loyalty {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-bottom: 22px;
+}
+
+.loyalty_par {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-bottom: 22px;
+}
+
+.reg_list {
+    list-style: none;
+}
+
+.reg_list li:before {
+    content: '✓';
+    padding-right: 22px;
+}
+
 .footer_outer {
     background-color: #222224;
 }
@@ -424,4 +585,19 @@
 
 svg:hover path.footer_social_svg_back {
     fill: #F16D7F;
+}
+
+.header_extra_reg {
+    background-color: #F1E4E6;
+    height: 148px;
+}
+
+.header_reg {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+    padding-top: 59px;
 }
