@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main</title>
+    <title>Catalog</title>
     <link rel="stylesheet" href="styles.css">
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="/js/my.js"></script>
 </head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="/js/my.js"></script>
 <body>
 <header class="header_main">
     <nav class="container header_menu_flex">
@@ -74,78 +74,64 @@
         </ul>
     </nav>
 </header>
-<main class="main_content">
-    <div class="main_top">
-        <div class="container main_top_flex">
-            <div class="main_top_brand">
-                <img src="img/brand_logo.svg" alt="THE BRAND
-OF LUXERIOUS FASHION">
+<main>
+    <div class="main_top_outer">
+        <div class="main_top_catalog container">
+            <p class="main_top_catalog_header">NEW ARRIVALS</p>
+            <div class="main_top_catalog_path">
+                <p class="main_top_catalog_path_start">HOME / MEN /</p>
+                <p class="main_top_catalog_path_start main_top_catalog_path_end">NEW ARRIVALS</p>
             </div>
         </div>
     </div>
-    <div class="container main_content_flex">
-        <div class="main_content_top">
-            <section class="main_content_top_item">
-                <img class="main_content_item_img" src="img/women.png" alt="woman">
-                <div class="main_content_item_text_container">
-                    <p class="main_content_item_text_white">30% OFF</p>
-                    <p class="main_content_item_text_red">FOR WOMEN</p>
-                </div>
-            </section>
-            <section class="main_content_top_item">
-                <img class="main_content_item_img" src="img/man.png" alt="man">
-                <div class="main_content_item_text_container">
-                    <p class="main_content_item_text_white">HOT DEAL</p>
-                    <p class="main_content_item_text_red">FOR MEN</p>
-                </div>
-            </section>
-            <section class="main_content_top_item">
-                <img class="main_content_item_img" src="img/kid.png" alt="kid">
-                <div class="main_content_item_text_container">
-                    <p class="main_content_item_text_white">NEW ARRIVALS</p>
-                    <p class="main_content_item_text_red">FOR KIDS</p>
-                </div>
-            </section>
-        </div>
-        <div class="main_content_bottom">
-            <section class="main_content_bottom_item">
-                <img class="main_content_item_img" src="img/accesories.png" alt="accesories">
-                <div class="main_content_item_text_container">
-                    <p class="main_content_item_text_white">LUXIROUS & TRENDY</p>
-                    <p class="main_content_item_text_red">ACCESORIES</p>
-                </div>
-            </section>
-        </div>
-        <div class="main_content_featured_items">
-            <div class="main_content_featured_items_top">
-                <p class="main_content_featured_items_heading">Fetured Items</p>
-                <p class="main_content_featured_items_text">Shop for items based on what we featured in this
-                    week</p>
+    <div class="container main_content_flex_catalog">
+        <div class="main_content_catalog_menu">
+            <div class="main_content_catalog_menu_item">
+                <details class="catalog_menu_filter_main">
+                    <summary class="catalog_menu_filter_main_summary">FILTER</summary>
+                    <details class="catalog_menu_filter_main_inner">
+                        <summary class="catalog_menu_filter_main_inner_summary">CATEGORY</summary>
+                        <a href="#" class="catalog_menu_filter_main_inner_item">Accessories</a>
+                        <a href="#" class="catalog_menu_filter_main_inner_item">Bags</a>
+                        <a href="#" class="catalog_menu_filter_main_inner_item">Denim</a>
+                        <a href="#" class="catalog_menu_filter_main_inner_item">Hoodies & Sweatshirts</a>
+                        <a href="#" class="catalog_menu_filter_main_inner_item">Jackets & Coats</a>
+                        <a href="#" class="catalog_menu_filter_main_inner_item">Polos</a>
+                        <a href="#" class="catalog_menu_filter_main_inner_item">Shirts</a>
+                        <a href="#" class="catalog_menu_filter_main_inner_item">Shoes</a>
+                        <a href="#" class="catalog_menu_filter_main_inner_item">Sweaters & Knits</a>
+                        <a href="#" class="catalog_menu_filter_main_inner_item">T-Shirts</a>
+                        <a href="#" class="catalog_menu_filter_main_inner_item">Tanks</a>
+                    </details>
+                    <details class="catalog_menu_filter_main_inner">
+                        <summary class="catalog_menu_filter_main_inner_summary">BRAND</summary>
+                    </details>
+                    <details class="catalog_menu_filter_main_inner">
+                        <summary class="catalog_menu_filter_main_inner_summary">DESIGNER</summary>
+                    </details>
+                </details>
             </div>
+            <div class="main_content_catalog_menu_item">
+                <details class="catalog_menu_filter_extra">
+                    <summary class="catalog_menu_filter_extra_summary">TRENDING NOW</summary>
+                </details>
+                <details class="catalog_menu_filter_extra">
+                    <summary class="catalog_menu_filter_extra_summary">SIZE</summary>
+                </details>
+                <details class="catalog_menu_filter_extra">
+                    <summary class="catalog_menu_filter_extra_summary">PRICE</summary>
+                </details>
+            </div>
+        </div>
+        <div class="main_content_featured_items_catalog">
             <div class="main_content_featured_items_flex">
                 <div class="main_content_item">
                     <a class="main_content_item_link" href="#">
                         <img class="main_content_item_pic" src="img/product1.png" alt="product">
                         <div class="main_content_item_txt_box">
                             <p class="main_content_item_txt_box_phar">ELLERY X M'O CAPSULE</p>
-                            <p class="main_content_item_txt_box_desc">Known for her sculptural takes on traditional tailoring, Australian
-                                arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                            <p class="main_content_item_txt_box_coast">$52.00</p>
-                        </div>
-                    </a>
-                    <div class="main_content_item_add_box">
-                        <a href="#" class="main_content_item_add_link">
-                            <img src="img/add_to_cart.svg" alt="Add to cart">
-                            <p class="main_content_item_add_text">Add to Cart</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="main_content_item">
-                    <a class="main_content_item_link" href="#">
-                        <img class="main_content_item_pic" src="img/product2.png" alt="product">
-                        <div class="main_content_item_txt_box">
-                            <p class="main_content_item_txt_box_phar">ELLERY X M'O CAPSULE</p>
-                            <p class="main_content_item_txt_box_desc">Known for her sculptural takes on traditional tailoring, Australian
+                            <p class="main_content_item_txt_box_desc">Known for her sculptural takes on traditional
+                                tailoring, Australian
                                 arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                             <p class="main_content_item_txt_box_coast">$52.00</p>
                         </div>
@@ -162,7 +148,8 @@ OF LUXERIOUS FASHION">
                         <img class="main_content_item_pic" src="img/product3.png" alt="product">
                         <div class="main_content_item_txt_box">
                             <p class="main_content_item_txt_box_phar">ELLERY X M'O CAPSULE</p>
-                            <p class="main_content_item_txt_box_desc">Known for her sculptural takes on traditional tailoring, Australian
+                            <p class="main_content_item_txt_box_desc">Known for her sculptural takes on traditional
+                                tailoring, Australian
                                 arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                             <p class="main_content_item_txt_box_coast">$52.00</p>
                         </div>
@@ -179,7 +166,8 @@ OF LUXERIOUS FASHION">
                         <img class="main_content_item_pic" src="img/product4.png" alt="product">
                         <div class="main_content_item_txt_box">
                             <p class="main_content_item_txt_box_phar">ELLERY X M'O CAPSULE</p>
-                            <p class="main_content_item_txt_box_desc">Known for her sculptural takes on traditional tailoring, Australian
+                            <p class="main_content_item_txt_box_desc">Known for her sculptural takes on traditional
+                                tailoring, Australian
                                 arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                             <p class="main_content_item_txt_box_coast">$52.00</p>
                         </div>
@@ -193,10 +181,11 @@ OF LUXERIOUS FASHION">
                 </div>
                 <div class="main_content_item">
                     <a class="main_content_item_link" href="#">
-                        <img class="main_content_item_pic" src="img/product5.png" alt="product">
+                        <img class="main_content_item_pic" src="img/product7.png" alt="product">
                         <div class="main_content_item_txt_box">
                             <p class="main_content_item_txt_box_phar">ELLERY X M'O CAPSULE</p>
-                            <p class="main_content_item_txt_box_desc">Known for her sculptural takes on traditional tailoring, Australian
+                            <p class="main_content_item_txt_box_desc">Known for her sculptural takes on traditional
+                                tailoring, Australian
                                 arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                             <p class="main_content_item_txt_box_coast">$52.00</p>
                         </div>
@@ -210,10 +199,83 @@ OF LUXERIOUS FASHION">
                 </div>
                 <div class="main_content_item">
                     <a class="main_content_item_link" href="#">
-                        <img class="main_content_item_pic" src="img/product6.png" alt="product">
+                        <img class="main_content_item_pic" src="img/product8.png" alt="product">
                         <div class="main_content_item_txt_box">
                             <p class="main_content_item_txt_box_phar">ELLERY X M'O CAPSULE</p>
-                            <p class="main_content_item_txt_box_desc">Known for her sculptural takes on traditional tailoring, Australian
+                            <p class="main_content_item_txt_box_desc">Known for her sculptural takes on traditional
+                                tailoring, Australian
+                                arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                            <p class="main_content_item_txt_box_coast">$52.00</p>
+                        </div>
+                    </a>
+                    <div class="main_content_item_add_box">
+                        <a href="#" class="main_content_item_add_link">
+                            <img src="img/add_to_cart.svg" alt="Add to cart">
+                            <p class="main_content_item_add_text">Add to Cart</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="main_content_item">
+                    <a class="main_content_item_link" href="#">
+                        <img class="main_content_item_pic" src="img/product9.png" alt="product">
+                        <div class="main_content_item_txt_box">
+                            <p class="main_content_item_txt_box_phar">ELLERY X M'O CAPSULE</p>
+                            <p class="main_content_item_txt_box_desc">Known for her sculptural takes on traditional
+                                tailoring, Australian
+                                arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                            <p class="main_content_item_txt_box_coast">$52.00</p>
+                        </div>
+                    </a>
+                    <div class="main_content_item_add_box">
+                        <a href="#" class="main_content_item_add_link">
+                            <img src="img/add_to_cart.svg" alt="Add to cart">
+                            <p class="main_content_item_add_text">Add to Cart</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="main_content_item">
+                    <a class="main_content_item_link" href="#">
+                        <img class="main_content_item_pic" src="img/product10.png" alt="product">
+                        <div class="main_content_item_txt_box">
+                            <p class="main_content_item_txt_box_phar">ELLERY X M'O CAPSULE</p>
+                            <p class="main_content_item_txt_box_desc">Known for her sculptural takes on traditional
+                                tailoring, Australian
+                                arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                            <p class="main_content_item_txt_box_coast">$52.00</p>
+                        </div>
+                    </a>
+                    <div class="main_content_item_add_box">
+                        <a href="#" class="main_content_item_add_link">
+                            <img src="img/add_to_cart.svg" alt="Add to cart">
+                            <p class="main_content_item_add_text">Add to Cart</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="main_content_item">
+                    <a class="main_content_item_link" href="#">
+                        <img class="main_content_item_pic" src="img/product11.png" alt="product">
+                        <div class="main_content_item_txt_box">
+                            <p class="main_content_item_txt_box_phar">ELLERY X M'O CAPSULE</p>
+                            <p class="main_content_item_txt_box_desc">Known for her sculptural takes on traditional
+                                tailoring, Australian
+                                arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                            <p class="main_content_item_txt_box_coast">$52.00</p>
+                        </div>
+                    </a>
+                    <div class="main_content_item_add_box">
+                        <a href="#" class="main_content_item_add_link">
+                            <img src="img/add_to_cart.svg" alt="Add to cart">
+                            <p class="main_content_item_add_text">Add to Cart</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="main_content_item">
+                    <a class="main_content_item_link" href="#">
+                        <img class="main_content_item_pic" src="img/product12.png" alt="product">
+                        <div class="main_content_item_txt_box">
+                            <p class="main_content_item_txt_box_phar">ELLERY X M'O CAPSULE</p>
+                            <p class="main_content_item_txt_box_desc">Known for her sculptural takes on traditional
+                                tailoring, Australian
                                 arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                             <p class="main_content_item_txt_box_coast">$52.00</p>
                         </div>
@@ -226,9 +288,6 @@ OF LUXERIOUS FASHION">
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="main_content_button_flex">
-            <button class="main_content_button">Browse All Product</button>
         </div>
     </div>
     <div class="main_bottom">
